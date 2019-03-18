@@ -1,0 +1,43 @@
+% import csv
+% source = '../../Resources/MaybeEmpty.csv'
+%{
+def buildParameters(type, count):
+  if count == 0:
+    return ""
+  result = "<"
+  for x in range(count):
+    if x > 0:
+      result += ", "
+    result += type
+  result += ">"
+  return result
+}%
+% warning = "Generated with gyb. Do not edit."
+// ${warning}
+
+import XCTest
+@testable import Features
+
+final class MaybeEmptyTests: XCTestCase {
+% with open(source) as file:
+%   for row in csv.DictReader(file):
+%       protocol = row['Protocol']
+%       type = row['Type']
+%       genericCount = int(row['Generic parameters count'])
+%       fullType = type + buildParameters("Mock", genericCount)
+    func test${type.replace('.', '_')}ConformsTo${protocol}() {
+        XCTAssertTrue((${fullType}.self as Any.Type) is ${protocol}.Type)
+    }
+
+%   end
+% end
+    static var allTests = [
+% with open(source) as file:
+%   for row in csv.DictReader(file):
+%       protocol = row['Protocol']
+%       type = row['Type']
+        ("test${type.replace('.', '_')}ConformsTo${protocol}", test${type.replace('.', '_')}ConformsTo${protocol}),
+%   end
+% end
+    ]
+}
