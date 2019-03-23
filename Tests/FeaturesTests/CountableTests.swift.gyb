@@ -12,6 +12,14 @@ def buildParameters(type, count):
   result += ">"
   return result
 }%
+%{
+def getGenericParameterCount(type):
+  with open('../../Resources/generic_parameter_count.csv') as file:
+    for row in csv.DictReader(file):
+      if row['Type'] == type:
+        return int(row['Generic parameters count'])
+  return 'error: ' + type + ' not found in ' + file.name
+}%
 % warning = "Generated with gyb. Do not edit."
 // ${warning}
 
@@ -23,7 +31,7 @@ final class CountableTests: XCTestCase {
 %   for row in csv.DictReader(file):
 %       protocol = row['Protocol']
 %       type = row['Type']
-%       genericCount = int(row['Generic parameters count'])
+%       genericCount = getGenericParameterCount(type)
 %       fullType = type + buildParameters("Mock", genericCount)
     func test${type.replace('.', '_')}ConformsTo${protocol}() {
         XCTAssertTrue((${fullType}.self as Any.Type) is ${protocol}.Type)
