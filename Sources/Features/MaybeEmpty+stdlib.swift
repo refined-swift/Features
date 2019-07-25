@@ -7,7 +7,6 @@ extension AnyCollection: MaybeEmpty {}
 extension AnyRandomAccessCollection: MaybeEmpty {}
 extension Array: MaybeEmpty {}
 extension ArraySlice: MaybeEmpty {}
-extension Character.UnicodeScalarView: MaybeEmpty {}
 extension ClosedRange: MaybeEmpty {}
 extension CollectionOfOne: MaybeEmpty {}
 extension ContiguousArray: MaybeEmpty {}
@@ -20,12 +19,10 @@ extension ReversedCollection: MaybeEmpty {}
 extension Set: MaybeEmpty {}
 extension Slice: MaybeEmpty {}
 extension String: MaybeEmpty {}
-extension String._CharacterView: MaybeEmpty {}
 extension String.UnicodeScalarView: MaybeEmpty {}
 extension String.UTF16View: MaybeEmpty {}
 extension String.UTF8View: MaybeEmpty {}
 extension Substring: MaybeEmpty {}
-extension Substring._CharacterView: MaybeEmpty {}
 extension Substring.UnicodeScalarView: MaybeEmpty {}
 extension Substring.UTF16View: MaybeEmpty {}
 extension Substring.UTF8View: MaybeEmpty {}

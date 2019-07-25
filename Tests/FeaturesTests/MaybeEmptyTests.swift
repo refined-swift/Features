@@ -76,10 +76,6 @@ final class MaybeEmptyTests: XCTestCase {
         XCTAssertTrue((String.self as Any.Type) is MaybeEmpty.Type)
     }
 
-    func testString__CharacterViewConformsToMaybeEmpty() {
-        XCTAssertTrue((String._CharacterView.self as Any.Type) is MaybeEmpty.Type)
-    }
-
     func testString_UnicodeScalarViewConformsToMaybeEmpty() {
         XCTAssertTrue((String.UnicodeScalarView.self as Any.Type) is MaybeEmpty.Type)
     }
@@ -94,10 +90,6 @@ final class MaybeEmptyTests: XCTestCase {
 
     func testSubstringConformsToMaybeEmpty() {
         XCTAssertTrue((Substring.self as Any.Type) is MaybeEmpty.Type)
-    }
-
-    func testSubstring__CharacterViewConformsToMaybeEmpty() {
-        XCTAssertTrue((Substring._CharacterView.self as Any.Type) is MaybeEmpty.Type)
     }
 
     func testSubstring_UnicodeScalarViewConformsToMaybeEmpty() {
@@ -147,12 +139,10 @@ final class MaybeEmptyTests: XCTestCase {
         ("testSetConformsToMaybeEmpty", testSetConformsToMaybeEmpty),
         ("testSliceConformsToMaybeEmpty", testSliceConformsToMaybeEmpty),
         ("testStringConformsToMaybeEmpty", testStringConformsToMaybeEmpty),
-        ("testString__CharacterViewConformsToMaybeEmpty", testString__CharacterViewConformsToMaybeEmpty),
         ("testString_UnicodeScalarViewConformsToMaybeEmpty", testString_UnicodeScalarViewConformsToMaybeEmpty),
         ("testString_UTF16ViewConformsToMaybeEmpty", testString_UTF16ViewConformsToMaybeEmpty),
         ("testString_UTF8ViewConformsToMaybeEmpty", testString_UTF8ViewConformsToMaybeEmpty),
         ("testSubstringConformsToMaybeEmpty", testSubstringConformsToMaybeEmpty),
-        ("testSubstring__CharacterViewConformsToMaybeEmpty", testSubstring__CharacterViewConformsToMaybeEmpty),
         ("testSubstring_UnicodeScalarViewConformsToMaybeEmpty", testSubstring_UnicodeScalarViewConformsToMaybeEmpty),
         ("testSubstring_UTF16ViewConformsToMaybeEmpty", testSubstring_UTF16ViewConformsToMaybeEmpty),
         ("testSubstring_UTF8ViewConformsToMaybeEmpty", testSubstring_UTF8ViewConformsToMaybeEmpty),

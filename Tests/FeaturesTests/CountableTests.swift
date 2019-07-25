@@ -68,10 +68,6 @@ final class CountableTests: XCTestCase {
         XCTAssertTrue((String.self as Any.Type) is Countable.Type)
     }
 
-    func testString__CharacterViewConformsToCountable() {
-        XCTAssertTrue((String._CharacterView.self as Any.Type) is Countable.Type)
-    }
-
     func testString_UnicodeScalarViewConformsToCountable() {
         XCTAssertTrue((String.UnicodeScalarView.self as Any.Type) is Countable.Type)
     }
@@ -86,10 +82,6 @@ final class CountableTests: XCTestCase {
 
     func testSubstringConformsToCountable() {
         XCTAssertTrue((Substring.self as Any.Type) is Countable.Type)
-    }
-
-    func testSubstring__CharacterViewConformsToCountable() {
-        XCTAssertTrue((Substring._CharacterView.self as Any.Type) is Countable.Type)
     }
 
     func testSubstring_UnicodeScalarViewConformsToCountable() {
@@ -137,12 +129,10 @@ final class CountableTests: XCTestCase {
         ("testSetConformsToCountable", testSetConformsToCountable),
         ("testSliceConformsToCountable", testSliceConformsToCountable),
         ("testStringConformsToCountable", testStringConformsToCountable),
-        ("testString__CharacterViewConformsToCountable", testString__CharacterViewConformsToCountable),
         ("testString_UnicodeScalarViewConformsToCountable", testString_UnicodeScalarViewConformsToCountable),
         ("testString_UTF16ViewConformsToCountable", testString_UTF16ViewConformsToCountable),
         ("testString_UTF8ViewConformsToCountable", testString_UTF8ViewConformsToCountable),
         ("testSubstringConformsToCountable", testSubstringConformsToCountable),
-        ("testSubstring__CharacterViewConformsToCountable", testSubstring__CharacterViewConformsToCountable),
         ("testSubstring_UnicodeScalarViewConformsToCountable", testSubstring_UnicodeScalarViewConformsToCountable),
         ("testSubstring_UTF16ViewConformsToCountable", testSubstring_UTF16ViewConformsToCountable),
         ("testSubstring_UTF8ViewConformsToCountable", testSubstring_UTF8ViewConformsToCountable),
