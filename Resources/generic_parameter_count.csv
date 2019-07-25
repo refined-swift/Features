@@ -4,7 +4,7 @@ AnyCollection,1
 AnyRandomAccessCollection,1
 Array,1
 ArraySlice,1
-Character.UnicodeScalarView,0
+Character,0
 ClosedRange,1
 CollectionOfOne,1
 ContiguousArray,1
@@ -17,12 +17,10 @@ ReversedCollection,1
 Set,1
 Slice,1
 String,0
-String._CharacterView,0
 String.UnicodeScalarView,0
 String.UTF16View,0
 String.UTF8View,0
 Substring,0
-Substring._CharacterView,0
 Substring.UnicodeScalarView,0
 Substring.UTF16View,0
 Substring.UTF8View,0

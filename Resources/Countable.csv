@@ -4,7 +4,6 @@ Countable,AnyCollection
 Countable,AnyRandomAccessCollection
 Countable,Array
 Countable,ArraySlice
-Countable,Character.UnicodeScalarView
 Countable,CollectionOfOne
 Countable,ContiguousArray
 Countable,DefaultIndices
@@ -15,12 +14,10 @@ Countable,ReversedCollection
 Countable,Set
 Countable,Slice
 Countable,String
-Countable,String._CharacterView
 Countable,String.UnicodeScalarView
 Countable,String.UTF16View
 Countable,String.UTF8View
 Countable,Substring
-Countable,Substring._CharacterView
 Countable,Substring.UnicodeScalarView
 Countable,Substring.UTF16View
 Countable,Substring.UTF8View

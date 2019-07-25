@@ -24,10 +24,6 @@ final class CountableTests: XCTestCase {
         XCTAssertTrue((ArraySlice<Mock>.self as Any.Type) is Countable.Type)
     }
 
-    func testCharacter_UnicodeScalarViewConformsToCountable() {
-        XCTAssertTrue((Character.UnicodeScalarView.self as Any.Type) is Countable.Type)
-    }
-
     func testCollectionOfOneConformsToCountable() {
         XCTAssertTrue((CollectionOfOne<Mock>.self as Any.Type) is Countable.Type)
     }
@@ -118,7 +114,6 @@ final class CountableTests: XCTestCase {
         ("testAnyRandomAccessCollectionConformsToCountable", testAnyRandomAccessCollectionConformsToCountable),
         ("testArrayConformsToCountable", testArrayConformsToCountable),
         ("testArraySliceConformsToCountable", testArraySliceConformsToCountable),
-        ("testCharacter_UnicodeScalarViewConformsToCountable", testCharacter_UnicodeScalarViewConformsToCountable),
         ("testCollectionOfOneConformsToCountable", testCollectionOfOneConformsToCountable),
         ("testContiguousArrayConformsToCountable", testContiguousArrayConformsToCountable),
         ("testDefaultIndicesConformsToCountable", testDefaultIndicesConformsToCountable),

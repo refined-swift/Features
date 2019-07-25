@@ -4,7 +4,6 @@ MaybeEmpty,AnyCollection
 MaybeEmpty,AnyRandomAccessCollection
 MaybeEmpty,Array
 MaybeEmpty,ArraySlice
-MaybeEmpty,Character.UnicodeScalarView
 MaybeEmpty,ClosedRange
 MaybeEmpty,CollectionOfOne
 MaybeEmpty,ContiguousArray
@@ -17,12 +16,10 @@ MaybeEmpty,ReversedCollection
 MaybeEmpty,Set
 MaybeEmpty,Slice
 MaybeEmpty,String
-MaybeEmpty,String._CharacterView
 MaybeEmpty,String.UnicodeScalarView
 MaybeEmpty,String.UTF16View
 MaybeEmpty,String.UTF8View
 MaybeEmpty,Substring
-MaybeEmpty,Substring._CharacterView
 MaybeEmpty,Substring.UnicodeScalarView
 MaybeEmpty,Substring.UTF16View
 MaybeEmpty,Substring.UTF8View

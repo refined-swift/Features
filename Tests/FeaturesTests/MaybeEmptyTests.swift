@@ -24,10 +24,6 @@ final class MaybeEmptyTests: XCTestCase {
         XCTAssertTrue((ArraySlice<Mock>.self as Any.Type) is MaybeEmpty.Type)
     }
 
-    func testCharacter_UnicodeScalarViewConformsToMaybeEmpty() {
-        XCTAssertTrue((Character.UnicodeScalarView.self as Any.Type) is MaybeEmpty.Type)
-    }
-
     func testClosedRangeConformsToMaybeEmpty() {
         XCTAssertTrue((ClosedRange<Mock>.self as Any.Type) is MaybeEmpty.Type)
     }
@@ -126,7 +122,6 @@ final class MaybeEmptyTests: XCTestCase {
         ("testAnyRandomAccessCollectionConformsToMaybeEmpty", testAnyRandomAccessCollectionConformsToMaybeEmpty),
         ("testArrayConformsToMaybeEmpty", testArrayConformsToMaybeEmpty),
         ("testArraySliceConformsToMaybeEmpty", testArraySliceConformsToMaybeEmpty),
-        ("testCharacter_UnicodeScalarViewConformsToMaybeEmpty", testCharacter_UnicodeScalarViewConformsToMaybeEmpty),
         ("testClosedRangeConformsToMaybeEmpty", testClosedRangeConformsToMaybeEmpty),
         ("testCollectionOfOneConformsToMaybeEmpty", testCollectionOfOneConformsToMaybeEmpty),
         ("testContiguousArrayConformsToMaybeEmpty", testContiguousArrayConformsToMaybeEmpty),
