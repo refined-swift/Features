@@ -1,0 +1,20 @@
+% import json
+% source = '../../Resources/Maybe.json'
+% warning = 'Generated with gyb. Do not edit.'
+// ${warning}
+
+import Swift
+% with open(source) as file:
+%   for feature in json.load(file):
+%     protocol = feature['name']
+%     property = feature['signature']
+
+public protocol ${protocol} {
+    ${property}
+}
+
+%     for type in feature['types']:
+extension ${type}: ${protocol} {}
+%     end
+%   end
+% end

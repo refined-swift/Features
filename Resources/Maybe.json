@@ -1,0 +1,873 @@
+[
+  {
+    "protocols" : [
+      "Collection",
+      "SetAlgebra"
+    ],
+    "perfectlyMatchingProtocols" : [
+
+    ],
+    "signature" : "var isEmpty: Bool { get }",
+    "types" : [
+      "ClosedRange",
+      "Dictionary",
+      "Dictionary.Keys",
+      "Dictionary.Values",
+      "Range",
+      "Set",
+      "String",
+      "_ValidUTF8Buffer"
+    ],
+    "type" : "property",
+    "name" : "MaybeEmpty"
+  },
+  {
+    "protocols" : [
+      "FloatingPoint"
+    ],
+    "perfectlyMatchingProtocols" : [
+
+    ],
+    "signature" : "var isZero: Bool { get }",
+    "types" : [
+      "Double",
+      "Float",
+      "Float80"
+    ],
+    "type" : "property",
+    "name" : "MaybeZero"
+  },
+  {
+    "protocols" : [
+      "FloatingPoint"
+    ],
+    "perfectlyMatchingProtocols" : [
+
+    ],
+    "signature" : "var isSubnormal: Bool { get }",
+    "types" : [
+      "Double",
+      "Float",
+      "Float80"
+    ],
+    "type" : "property",
+    "name" : "MaybeSubnormal"
+  },
+  {
+    "protocols" : [
+      "FloatingPoint"
+    ],
+    "perfectlyMatchingProtocols" : [
+
+    ],
+    "signature" : "var isCanonical: Bool { get }",
+    "types" : [
+      "Double",
+      "Float",
+      "Float80"
+    ],
+    "type" : "property",
+    "name" : "MaybeCanonical"
+  },
+  {
+    "protocols" : [
+      "FloatingPoint"
+    ],
+    "perfectlyMatchingProtocols" : [
+
+    ],
+    "signature" : "var isNaN: Bool { get }",
+    "types" : [
+      "Double",
+      "Float",
+      "Float80"
+    ],
+    "type" : "property",
+    "name" : "MaybeNaN"
+  },
+  {
+    "protocols" : [
+      "FloatingPoint"
+    ],
+    "perfectlyMatchingProtocols" : [
+
+    ],
+    "signature" : "var isInfinite: Bool { get }",
+    "types" : [
+      "Double",
+      "Float",
+      "Float80"
+    ],
+    "type" : "property",
+    "name" : "MaybeInfinite"
+  },
+  {
+    "protocols" : [
+      "FloatingPoint"
+    ],
+    "perfectlyMatchingProtocols" : [
+
+    ],
+    "signature" : "var isSignalingNaN: Bool { get }",
+    "types" : [
+      "Double",
+      "Float",
+      "Float80"
+    ],
+    "type" : "property",
+    "name" : "MaybeSignalingNaN"
+  },
+  {
+    "protocols" : [
+      "FloatingPoint"
+    ],
+    "perfectlyMatchingProtocols" : [
+
+    ],
+    "signature" : "var isNormal: Bool { get }",
+    "types" : [
+      "Double",
+      "Float",
+      "Float80"
+    ],
+    "type" : "property",
+    "name" : "MaybeNormal"
+  },
+  {
+    "protocols" : [
+
+    ],
+    "perfectlyMatchingProtocols" : [
+
+    ],
+    "signature" : "var isASCII: Bool { get }",
+    "types" : [
+      "Character",
+      "StaticString",
+      "Unicode.Scalar"
+    ],
+    "type" : "property",
+    "name" : "MaybeAscii"
+  },
+  {
+    "protocols" : [
+      "FloatingPoint"
+    ],
+    "perfectlyMatchingProtocols" : [
+
+    ],
+    "signature" : "var isFinite: Bool { get }",
+    "types" : [
+      "Double",
+      "Float",
+      "Float80"
+    ],
+    "type" : "property",
+    "name" : "MaybeFinite"
+  },
+  {
+    "protocols" : [
+
+    ],
+    "perfectlyMatchingProtocols" : [
+
+    ],
+    "signature" : "var isHexDigit: Bool { get }",
+    "types" : [
+      "Character",
+      "Unicode.Scalar.Properties"
+    ],
+    "type" : "property",
+    "name" : "MaybeHexDigit"
+  },
+  {
+    "protocols" : [
+
+    ],
+    "perfectlyMatchingProtocols" : [
+
+    ],
+    "signature" : "var isLowercase: Bool { get }",
+    "types" : [
+      "Character",
+      "Unicode.Scalar.Properties"
+    ],
+    "type" : "property",
+    "name" : "MaybeLowercase"
+  },
+  {
+    "protocols" : [
+
+    ],
+    "perfectlyMatchingProtocols" : [
+
+    ],
+    "signature" : "var isCased: Bool { get }",
+    "types" : [
+      "Character",
+      "Unicode.Scalar.Properties"
+    ],
+    "type" : "property",
+    "name" : "MaybeCased"
+  },
+  {
+    "protocols" : [
+
+    ],
+    "perfectlyMatchingProtocols" : [
+
+    ],
+    "signature" : "var isWhitespace: Bool { get }",
+    "types" : [
+      "Character",
+      "Unicode.Scalar.Properties"
+    ],
+    "type" : "property",
+    "name" : "MaybeWhitespace"
+  },
+  {
+    "protocols" : [
+
+    ],
+    "perfectlyMatchingProtocols" : [
+
+    ],
+    "signature" : "var isUppercase: Bool { get }",
+    "types" : [
+      "Character",
+      "Unicode.Scalar.Properties"
+    ],
+    "type" : "property",
+    "name" : "MaybeUppercase"
+  },
+  {
+    "protocols" : [
+
+    ],
+    "perfectlyMatchingProtocols" : [
+
+    ],
+    "signature" : "var isDeprecated: Bool { get }",
+    "types" : [
+      "Unicode.Scalar.Properties"
+    ],
+    "type" : "property",
+    "name" : "MaybeDeprecated"
+  },
+  {
+    "protocols" : [
+
+    ],
+    "perfectlyMatchingProtocols" : [
+
+    ],
+    "signature" : "var isRadical: Bool { get }",
+    "types" : [
+      "Unicode.Scalar.Properties"
+    ],
+    "type" : "property",
+    "name" : "MaybeRadical"
+  },
+  {
+    "protocols" : [
+
+    ],
+    "perfectlyMatchingProtocols" : [
+
+    ],
+    "signature" : "var isSentenceTerminal: Bool { get }",
+    "types" : [
+      "Unicode.Scalar.Properties"
+    ],
+    "type" : "property",
+    "name" : "MaybeSentenceTerminal"
+  },
+  {
+    "protocols" : [
+
+    ],
+    "perfectlyMatchingProtocols" : [
+
+    ],
+    "signature" : "@available(macOS 10.12.2, iOS 10.2, tvOS 10.1, watchOS 3.1.1, *) var isEmojiModifier: Bool { get }",
+    "types" : [
+      "Unicode.Scalar.Properties"
+    ],
+    "type" : "property",
+    "name" : "MaybeEmojiModifier"
+  },
+  {
+    "protocols" : [
+
+    ],
+    "perfectlyMatchingProtocols" : [
+
+    ],
+    "signature" : "var isIDSTrinaryOperator: Bool { get }",
+    "types" : [
+      "Unicode.Scalar.Properties"
+    ],
+    "type" : "property",
+    "name" : "MaybeIdstrinaryOperator"
+  },
+  {
+    "protocols" : [
+
+    ],
+    "perfectlyMatchingProtocols" : [
+
+    ],
+    "signature" : "var isLogicalOrderException: Bool { get }",
+    "types" : [
+      "Unicode.Scalar.Properties"
+    ],
+    "type" : "property",
+    "name" : "MaybeLogicalOrderException"
+  },
+  {
+    "protocols" : [
+
+    ],
+    "perfectlyMatchingProtocols" : [
+
+    ],
+    "signature" : "var isIdeographic: Bool { get }",
+    "types" : [
+      "Unicode.Scalar.Properties"
+    ],
+    "type" : "property",
+    "name" : "MaybeIdeographic"
+  },
+  {
+    "protocols" : [
+
+    ],
+    "perfectlyMatchingProtocols" : [
+
+    ],
+    "signature" : "var isWholeNumber: Bool { get }",
+    "types" : [
+      "Character"
+    ],
+    "type" : "property",
+    "name" : "MaybeWholeNumber"
+  },
+  {
+    "protocols" : [
+
+    ],
+    "perfectlyMatchingProtocols" : [
+
+    ],
+    "signature" : "var isIDContinue: Bool { get }",
+    "types" : [
+      "Unicode.Scalar.Properties"
+    ],
+    "type" : "property",
+    "name" : "MaybeIdcontinue"
+  },
+  {
+    "protocols" : [
+
+    ],
+    "perfectlyMatchingProtocols" : [
+
+    ],
+    "signature" : "@available(macOS 10.12.2, iOS 10.2, tvOS 10.1, watchOS 3.1.1, *) var isEmoji: Bool { get }",
+    "types" : [
+      "Unicode.Scalar.Properties"
+    ],
+    "type" : "property",
+    "name" : "MaybeEmoji"
+  },
+  {
+    "protocols" : [
+
+    ],
+    "perfectlyMatchingProtocols" : [
+
+    ],
+    "signature" : "var isLetter: Bool { get }",
+    "types" : [
+      "Character"
+    ],
+    "type" : "property",
+    "name" : "MaybeLetter"
+  },
+  {
+    "protocols" : [
+
+    ],
+    "perfectlyMatchingProtocols" : [
+
+    ],
+    "signature" : "var isBidiControl: Bool { get }",
+    "types" : [
+      "Unicode.Scalar.Properties"
+    ],
+    "type" : "property",
+    "name" : "MaybeBidiControl"
+  },
+  {
+    "protocols" : [
+
+    ],
+    "perfectlyMatchingProtocols" : [
+
+    ],
+    "signature" : "var isDefaultIgnorableCodePoint: Bool { get }",
+    "types" : [
+      "Unicode.Scalar.Properties"
+    ],
+    "type" : "property",
+    "name" : "MaybeDefaultIgnorableCodePoint"
+  },
+  {
+    "protocols" : [
+
+    ],
+    "perfectlyMatchingProtocols" : [
+
+    ],
+    "signature" : "var isVariationSelector: Bool { get }",
+    "types" : [
+      "Unicode.Scalar.Properties"
+    ],
+    "type" : "property",
+    "name" : "MaybeVariationSelector"
+  },
+  {
+    "protocols" : [
+
+    ],
+    "perfectlyMatchingProtocols" : [
+
+    ],
+    "signature" : "var isTerminalPunctuation: Bool { get }",
+    "types" : [
+      "Unicode.Scalar.Properties"
+    ],
+    "type" : "property",
+    "name" : "MaybeTerminalPunctuation"
+  },
+  {
+    "protocols" : [
+
+    ],
+    "perfectlyMatchingProtocols" : [
+
+    ],
+    "signature" : "var isExtender: Bool { get }",
+    "types" : [
+      "Unicode.Scalar.Properties"
+    ],
+    "type" : "property",
+    "name" : "MaybeExtender"
+  },
+  {
+    "protocols" : [
+
+    ],
+    "perfectlyMatchingProtocols" : [
+
+    ],
+    "signature" : "var isCurrencySymbol: Bool { get }",
+    "types" : [
+      "Character"
+    ],
+    "type" : "property",
+    "name" : "MaybeCurrencySymbol"
+  },
+  {
+    "protocols" : [
+
+    ],
+    "perfectlyMatchingProtocols" : [
+
+    ],
+    "signature" : "@available(macOS 10.12.2, iOS 10.2, tvOS 10.1, watchOS 3.1.1, *) var isEmojiPresentation: Bool { get }",
+    "types" : [
+      "Unicode.Scalar.Properties"
+    ],
+    "type" : "property",
+    "name" : "MaybeEmojiPresentation"
+  },
+  {
+    "protocols" : [
+
+    ],
+    "perfectlyMatchingProtocols" : [
+
+    ],
+    "signature" : "var isQuotationMark: Bool { get }",
+    "types" : [
+      "Unicode.Scalar.Properties"
+    ],
+    "type" : "property",
+    "name" : "MaybeQuotationMark"
+  },
+  {
+    "protocols" : [
+
+    ],
+    "perfectlyMatchingProtocols" : [
+
+    ],
+    "signature" : "var isAlphabetic: Bool { get }",
+    "types" : [
+      "Unicode.Scalar.Properties"
+    ],
+    "type" : "property",
+    "name" : "MaybeAlphabetic"
+  },
+  {
+    "protocols" : [
+
+    ],
+    "perfectlyMatchingProtocols" : [
+
+    ],
+    "signature" : "var isNumber: Bool { get }",
+    "types" : [
+      "Character"
+    ],
+    "type" : "property",
+    "name" : "MaybeNumber"
+  },
+  {
+    "protocols" : [
+
+    ],
+    "perfectlyMatchingProtocols" : [
+
+    ],
+    "signature" : "var isPunctuation: Bool { get }",
+    "types" : [
+      "Character"
+    ],
+    "type" : "property",
+    "name" : "MaybePunctuation"
+  },
+  {
+    "protocols" : [
+
+    ],
+    "perfectlyMatchingProtocols" : [
+
+    ],
+    "signature" : "var isPatternWhitespace: Bool { get }",
+    "types" : [
+      "Unicode.Scalar.Properties"
+    ],
+    "type" : "property",
+    "name" : "MaybePatternWhitespace"
+  },
+  {
+    "protocols" : [
+
+    ],
+    "perfectlyMatchingProtocols" : [
+
+    ],
+    "signature" : "var isCaseIgnorable: Bool { get }",
+    "types" : [
+      "Unicode.Scalar.Properties"
+    ],
+    "type" : "property",
+    "name" : "MaybeCaseIgnorable"
+  },
+  {
+    "protocols" : [
+
+    ],
+    "perfectlyMatchingProtocols" : [
+
+    ],
+    "signature" : "var isBidiMirrored: Bool { get }",
+    "types" : [
+      "Unicode.Scalar.Properties"
+    ],
+    "type" : "property",
+    "name" : "MaybeBidiMirrored"
+  },
+  {
+    "protocols" : [
+
+    ],
+    "perfectlyMatchingProtocols" : [
+
+    ],
+    "signature" : "var isNoncharacterCodePoint: Bool { get }",
+    "types" : [
+      "Unicode.Scalar.Properties"
+    ],
+    "type" : "property",
+    "name" : "MaybeNoncharacterCodePoint"
+  },
+  {
+    "protocols" : [
+
+    ],
+    "perfectlyMatchingProtocols" : [
+
+    ],
+    "signature" : "var isPatternSyntax: Bool { get }",
+    "types" : [
+      "Unicode.Scalar.Properties"
+    ],
+    "type" : "property",
+    "name" : "MaybePatternSyntax"
+  },
+  {
+    "protocols" : [
+
+    ],
+    "perfectlyMatchingProtocols" : [
+
+    ],
+    "signature" : "var isJoinControl: Bool { get }",
+    "types" : [
+      "Unicode.Scalar.Properties"
+    ],
+    "type" : "property",
+    "name" : "MaybeJoinControl"
+  },
+  {
+    "protocols" : [
+
+    ],
+    "perfectlyMatchingProtocols" : [
+
+    ],
+    "signature" : "var isXIDContinue: Bool { get }",
+    "types" : [
+      "Unicode.Scalar.Properties"
+    ],
+    "type" : "property",
+    "name" : "MaybeXidcontinue"
+  },
+  {
+    "protocols" : [
+
+    ],
+    "perfectlyMatchingProtocols" : [
+
+    ],
+    "signature" : "var isSymbol: Bool { get }",
+    "types" : [
+      "Character"
+    ],
+    "type" : "property",
+    "name" : "MaybeSymbol"
+  },
+  {
+    "protocols" : [
+
+    ],
+    "perfectlyMatchingProtocols" : [
+
+    ],
+    "signature" : "var isNewline: Bool { get }",
+    "types" : [
+      "Character"
+    ],
+    "type" : "property",
+    "name" : "MaybeNewline"
+  },
+  {
+    "protocols" : [
+
+    ],
+    "perfectlyMatchingProtocols" : [
+
+    ],
+    "signature" : "var isGraphemeExtend: Bool { get }",
+    "types" : [
+      "Unicode.Scalar.Properties"
+    ],
+    "type" : "property",
+    "name" : "MaybeGraphemeExtend"
+  },
+  {
+    "protocols" : [
+
+    ],
+    "perfectlyMatchingProtocols" : [
+
+    ],
+    "signature" : "var isMathSymbol: Bool { get }",
+    "types" : [
+      "Character"
+    ],
+    "type" : "property",
+    "name" : "MaybeMathSymbol"
+  },
+  {
+    "protocols" : [
+
+    ],
+    "perfectlyMatchingProtocols" : [
+
+    ],
+    "signature" : "var isGraphemeBase: Bool { get }",
+    "types" : [
+      "Unicode.Scalar.Properties"
+    ],
+    "type" : "property",
+    "name" : "MaybeGraphemeBase"
+  },
+  {
+    "protocols" : [
+
+    ],
+    "perfectlyMatchingProtocols" : [
+
+    ],
+    "signature" : "var isDiacritic: Bool { get }",
+    "types" : [
+      "Unicode.Scalar.Properties"
+    ],
+    "type" : "property",
+    "name" : "MaybeDiacritic"
+  },
+  {
+    "protocols" : [
+
+    ],
+    "perfectlyMatchingProtocols" : [
+
+    ],
+    "signature" : "@available(macOS 10.12.2, iOS 10.2, tvOS 10.1, watchOS 3.1.1, *) var isEmojiModifierBase: Bool { get }",
+    "types" : [
+      "Unicode.Scalar.Properties"
+    ],
+    "type" : "property",
+    "name" : "MaybeEmojiModifierBase"
+  },
+  {
+    "protocols" : [
+
+    ],
+    "perfectlyMatchingProtocols" : [
+
+    ],
+    "signature" : "var isXIDStart: Bool { get }",
+    "types" : [
+      "Unicode.Scalar.Properties"
+    ],
+    "type" : "property",
+    "name" : "MaybeXidstart"
+  },
+  {
+    "protocols" : [
+
+    ],
+    "perfectlyMatchingProtocols" : [
+
+    ],
+    "signature" : "var isFullCompositionExclusion: Bool { get }",
+    "types" : [
+      "Unicode.Scalar.Properties"
+    ],
+    "type" : "property",
+    "name" : "MaybeFullCompositionExclusion"
+  },
+  {
+    "protocols" : [
+
+    ],
+    "perfectlyMatchingProtocols" : [
+
+    ],
+    "signature" : "var isSoftDotted: Bool { get }",
+    "types" : [
+      "Unicode.Scalar.Properties"
+    ],
+    "type" : "property",
+    "name" : "MaybeSoftDotted"
+  },
+  {
+    "protocols" : [
+
+    ],
+    "perfectlyMatchingProtocols" : [
+
+    ],
+    "signature" : "var isASCIIHexDigit: Bool { get }",
+    "types" : [
+      "Unicode.Scalar.Properties"
+    ],
+    "type" : "property",
+    "name" : "MaybeAsciihexDigit"
+  },
+  {
+    "protocols" : [
+
+    ],
+    "perfectlyMatchingProtocols" : [
+
+    ],
+    "signature" : "var isIDSBinaryOperator: Bool { get }",
+    "types" : [
+      "Unicode.Scalar.Properties"
+    ],
+    "type" : "property",
+    "name" : "MaybeIdsbinaryOperator"
+  },
+  {
+    "protocols" : [
+
+    ],
+    "perfectlyMatchingProtocols" : [
+
+    ],
+    "signature" : "var isUnifiedIdeograph: Bool { get }",
+    "types" : [
+      "Unicode.Scalar.Properties"
+    ],
+    "type" : "property",
+    "name" : "MaybeUnifiedIdeograph"
+  },
+  {
+    "protocols" : [
+
+    ],
+    "perfectlyMatchingProtocols" : [
+
+    ],
+    "signature" : "var isIDStart: Bool { get }",
+    "types" : [
+      "Unicode.Scalar.Properties"
+    ],
+    "type" : "property",
+    "name" : "MaybeIdstart"
+  },
+  {
+    "protocols" : [
+
+    ],
+    "perfectlyMatchingProtocols" : [
+
+    ],
+    "signature" : "var isMath: Bool { get }",
+    "types" : [
+      "Unicode.Scalar.Properties"
+    ],
+    "type" : "property",
+    "name" : "MaybeMath"
+  },
+  {
+    "protocols" : [
+
+    ],
+    "perfectlyMatchingProtocols" : [
+
+    ],
+    "signature" : "var isDash: Bool { get }",
+    "types" : [
+      "Unicode.Scalar.Properties"
+    ],
+    "type" : "property",
+    "name" : "MaybeDash"
+  }
+]

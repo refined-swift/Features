@@ -3,7 +3,7 @@
 import csv
 import json
 
-source = '../../Resources/Countable.csv'
+source = '../../Resources/Maybe.json'
 
 def buildParameters(type, count):
   """Build generic parameters string (e.g. '<Mock, Mock>')."""
@@ -42,27 +42,21 @@ warning = "Generated with gyb. Do not edit."
 
 import XCTest
 @testable import Features
-
-final class CountableTests: XCTestCase {
 % with open(source) as file:
-%   for row in csv.DictReader(file):
-%       protocol = row['Protocol']
-%       type = row['Type']
-%       genericCount = getGenericParameterCount(type)
+%   for feature in json.load(file):
+%     protocol = feature['name']
+%     property = feature['signature']
+
+final class ${protocol}Tests: XCTestCase {
+%     for type in feature['types']:
 %       fullType = buildFullType(type)
     func test${type.replace('.', '_')}ConformsTo${protocol}() {
         XCTAssertTrue((${fullType}.self as Any.Type) is ${protocol}.Type)
     }
-
-%   end
-% end
+%     end
     static var allTests = [
-% with open(source) as file:
-%   for row in csv.DictReader(file):
-%       protocol = row['Protocol']
-%       type = row['Type']
-        ("test${type.replace('.', '_')}ConformsTo${protocol}", test${type.replace('.', '_')}ConformsTo${protocol}),
-%   end
-% end
+    ("test${type.replace('.', '_')}ConformsTo${protocol}", test${type.replace('.', '_')}ConformsTo${protocol}),
     ]
 }
+%   end
+% end
