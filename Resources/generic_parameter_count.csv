@@ -10,6 +10,7 @@ ContiguousArray,1
 DefaultIndices,1
 Dictionary,2
 EmptyCollection,1
+ManagedBufferPointer,2
 Range,1
 Repeated,1
 ReversedCollection,1
@@ -17,3 +18,5 @@ Set,1
 Slice,1
 UnsafeBufferPointer,1
 UnsafeMutableBufferPointer,1
+_UIntBuffer,1
+KeyValuePairs,2

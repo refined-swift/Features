@@ -44,7 +44,7 @@ import XCTest
 @testable import Features
 % with open(source) as file:
 %   for feature in json.load(file):
-%     protocol = feature['name']
+%     protocol = feature['featureName']
 %     property = feature['signature']
 
 final class ${protocol}Tests: XCTestCase {
