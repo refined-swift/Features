@@ -11,8 +11,10 @@ DefaultIndices,1
 Dictionary,2
 EmptyCollection,1
 ManagedBufferPointer,2
+Optional,1
 Range,1
 Repeated,1
+Result,1
 ReversedCollection,1
 Set,1
 Slice,1
