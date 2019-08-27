@@ -1,0 +1,39 @@
+%{
+
+import csv
+import json
+
+source = '../../Resources/Operators.json'
+
+def getGenericParameterCount(type):
+  """Retrieve generic parameter count from CSV."""
+  with open('../../Resources/generic_parameter_count.csv') as file:
+    for row in csv.DictReader(file):
+      if row['Type'] == type:
+        return int(row['Generic parameters count'])
+  # print('warning: ' + type + ' not found in ' + file.name)
+  return 0
+
+warning = "Generated with gyb. Do not edit."
+
+}%
+// ${warning}
+
+import Swift
+% with open(source) as file:
+%   for feature in json.load(file):
+%     protocol = feature['featureName']
+%     signature = feature['signature']
+
+public protocol ${protocol} {
+    ${signature}
+}
+
+%     for type in feature['types']:
+%       genericCount = getGenericParameterCount(type) # TODO: do not skip types with generics
+%       if genericCount == 0:
+extension ${type}: ${protocol} {}
+%       end
+%     end
+%   end
+% end
