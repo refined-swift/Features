@@ -5,6 +5,7 @@ AnyRandomAccessCollection,1
 Array,1
 ArraySlice,1
 ClosedRange,1
+CollectionDifference,1
 CollectionOfOne,1
 ContiguousArray,1
 DefaultIndices,1
