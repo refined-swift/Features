@@ -24,25 +24,21 @@ public protocol PointwiseNOTCompatible {
     static prefix func .! (_ lhs: Self) -> Self
 }
 
-extension SIMDMask: PointwiseNOTCompatible {}
 
 public protocol PointwiseBitwiseXORCompatible {
     static func .^ (_ lhs: Self, _ rhs: Self) -> Self
 }
 
-extension SIMDMask: PointwiseBitwiseXORCompatible {}
 
 public protocol PointwiseBitwiseORCompatible {
     static func .| (_ lhs: Self, _ rhs: Self) -> Self
 }
 
-extension SIMDMask: PointwiseBitwiseORCompatible {}
 
 public protocol PointwiseBitwiseANDCompatible {
     static func .& (_ lhs: Self, _ rhs: Self) -> Self
 }
 
-extension SIMDMask: PointwiseBitwiseANDCompatible {}
 
 public protocol OverflowRightShiftCompatible {
     static func &>> (_ lhs: Self, _ rhs: Self) -> Self
@@ -293,14 +289,6 @@ extension Int8: EqualCompatible {}
 extension ObjectIdentifier: EqualCompatible {}
 extension OpaquePointer: EqualCompatible {}
 extension ReversedCollection.Index: EqualCompatible {}
-extension SIMD16: EqualCompatible {}
-extension SIMD2: EqualCompatible {}
-extension SIMD3: EqualCompatible {}
-extension SIMD32: EqualCompatible {}
-extension SIMD4: EqualCompatible {}
-extension SIMD64: EqualCompatible {}
-extension SIMD8: EqualCompatible {}
-extension SIMDMask: EqualCompatible {}
 extension Set.Index: EqualCompatible {}
 extension String: EqualCompatible {}
 extension String.Index: EqualCompatible {}

@@ -1,0 +1,16 @@
+% import json
+% source = '../../Resources/Initiable.json'
+% warning = 'Generated with gyb. Do not edit.'
+// ${warning}
+
+import Swift
+
+public protocol Initiable {
+    init()
+}
+
+% with open(source) as file:
+%   for type in json.load(file):
+extension ${type}: Initiable {}
+%   end
+% end

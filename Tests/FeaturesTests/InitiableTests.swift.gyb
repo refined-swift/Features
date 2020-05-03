@@ -1,0 +1,55 @@
+%{
+
+import csv
+import json
+
+source = '../../Resources/Initiable.json'
+
+def buildParameters(type, count):
+  """Build generic parameters string (e.g. '<Mock, Mock>')."""
+  if count == 0:
+    return ''
+  result = '<'
+  for x in range(count):
+    if x > 0:
+      result += ', '
+    result += type
+  result += '>'
+  return result
+
+def getGenericParameterCount(type):
+  """Retrieve generic parameter count from CSV."""
+  with open('../../Resources/generic_parameter_count.csv') as file:
+    for row in csv.DictReader(file):
+      if row['Type'] == type:
+        return int(row['Generic parameters count'])
+  # print('warning: ' + type + ' not found in ' + file.name)
+  return 0
+
+def buildFullType(type):
+  """Add any number of required generic parameters to the given type (e.g. 'Set<Mock>')."""
+  fullTypes = []
+  for subtype in type.split('.'):
+    genericCount = getGenericParameterCount(subtype)
+    fullSubtype = subtype + buildParameters("Mock", genericCount)
+    fullTypes.append(fullSubtype)
+  return '.'.join(fullTypes)
+
+warning = "Generated with gyb. Do not edit."
+
+}%
+// ${warning}
+
+import XCTest
+@testable import Features
+
+final class InitiableTests: XCTestCase {
+    func test() {
+% with open(source) as file:
+%   for type in json.load(file):
+%     fullType = buildFullType(type)
+        _ = ${fullType}()
+%   end
+% end
+    }
+}
