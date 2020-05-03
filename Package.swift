@@ -1,4 +1,4 @@
-// swift-tools-version:5.1
+// swift-tools-version:5.2
 
 import PackageDescription
 
@@ -19,5 +19,5 @@ let package = Package(
             name: "FeaturesTests",
             dependencies: ["Features"]),
     ],
-    swiftLanguageVersions: [.version("5.1")]
+    swiftLanguageVersions: [.v5]
 )
