@@ -18,6 +18,14 @@ Repeated,1
 Result,1
 ReversedCollection,1
 Set,1
+SIMDMask,1
+SIMD2,1
+SIMD4,1
+SIMD8,1
+SIMD16,1
+SIMD32,1
+SIMD64,1
+SIMD3,1
 Slice,1
 UnsafeBufferPointer,1
 UnsafeMutableBufferPointer,1
